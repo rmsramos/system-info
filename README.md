@@ -4,7 +4,7 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/rmsramos/system-info/fix-php-code-styling.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/rmsramos/system-info/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/rmsramos/system-info.svg?style=flat-square)](https://packagist.org/packages/rmsramos/system-info)
 
-![Screenshot of Application Feature](arts/cover.png)
+![Screenshot of Application Feature](https://raw.githubusercontent.com/rmsramos/system-info/main/arts/cover.png)
 
 A very simple filament plugin to show system info widget
 
