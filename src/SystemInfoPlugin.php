@@ -1,20 +1,24 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace Rmsramos\SystemInfo;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
+use Rmsramos\SystemInfo\Filament\Widgets\SystemInfoWidget;
 
-class SkeletonPlugin implements Plugin
+class SystemInfoPlugin implements Plugin
 {
     public function getId(): string
     {
-        return 'skeleton';
+        return 'system-info';
     }
 
     public function register(Panel $panel): void
     {
-        //
+        $panel
+            ->widgets([
+                SystemInfoWidget::class,
+            ]);
     }
 
     public function boot(Panel $panel): void
