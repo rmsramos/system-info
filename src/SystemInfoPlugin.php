@@ -1,15 +1,15 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace Rmsramos\SystemInfo;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
 
-class SkeletonPlugin implements Plugin
+class SystemInfoPlugin implements Plugin
 {
     public function getId(): string
     {
-        return 'skeleton';
+        return 'system-info';
     }
 
     public function register(Panel $panel): void

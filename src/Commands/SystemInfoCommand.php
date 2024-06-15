@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Rmsramos\SystemInfo\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class SystemInfoCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'system-info';
 
     public $description = 'My command';
 
