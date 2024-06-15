@@ -4,6 +4,7 @@ namespace Rmsramos\SystemInfo;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
+use Rmsramos\SystemInfo\Filament\Widgets\SystemInfoWidget;
 
 class SystemInfoPlugin implements Plugin
 {
@@ -14,7 +15,10 @@ class SystemInfoPlugin implements Plugin
 
     public function register(Panel $panel): void
     {
-        //
+        $panel
+            ->widgets([
+                SystemInfoWidget::class,
+            ]);
     }
 
     public function boot(Panel $panel): void
