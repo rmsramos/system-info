@@ -56,5 +56,4 @@ class SystemInfoPlugin implements Plugin
     {
         return $this->evaluate($this->sort);
     }
-
 }
