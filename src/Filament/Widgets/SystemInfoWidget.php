@@ -3,10 +3,15 @@
 namespace Rmsramos\SystemInfo\Filament\Widgets;
 
 use Filament\Widgets\Widget;
+use Rmsramos\SystemInfo\SystemInfoPlugin;
 
 class SystemInfoWidget extends Widget
 {
-    //protected static ?int $sort = -2;
+    public static function getSort(): int
+    {
+
+        return SystemInfoPlugin::get()->getSort() ?? -1;
+    }
 
     protected static bool $isLazy = false;
 
