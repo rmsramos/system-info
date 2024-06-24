@@ -2,12 +2,18 @@
 
 namespace Rmsramos\SystemInfo;
 
+use Closure;
 use Filament\Contracts\Plugin;
 use Filament\Panel;
+use Filament\Support\Concerns\EvaluatesClosures;
 use Rmsramos\SystemInfo\Filament\Widgets\SystemInfoWidget;
 
 class SystemInfoPlugin implements Plugin
 {
+    use EvaluatesClosures;
+
+    public Closure | null | int $sort = null;
+
     public function getId(): string
     {
         return 'system-info';
@@ -37,5 +43,17 @@ class SystemInfoPlugin implements Plugin
         $plugin = filament(app(static::class)->getId());
 
         return $plugin;
+    }
+
+    public function setSort(Closure | int | null $value = null): static
+    {
+        $this->sort = $value;
+
+        return $this;
+    }
+
+    public function getSort(): ?int
+    {
+        return $this->evaluate($this->sort);
     }
 }
